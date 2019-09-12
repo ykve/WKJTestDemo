@@ -1,0 +1,141 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - AliPay (2.1.2)
+  - Bugly (2.5.0)
+  - FLAnimatedImage (1.0.12)
+  - FSCalendar (2.8.0)
+  - IQKeyboardManager (6.4.0)
+  - JCore (2.1.1)
+  - JPush (3.2.1):
+    - JCore (< 3.0.0, >= 2.0.0)
+  - Masonry (1.1.0)
+  - Meiqia (3.4.9):
+    - Meiqia/MeiqiaSDK (= 3.4.9)
+    - Meiqia/MQChatViewController (= 3.4.9)
+  - Meiqia/MeiqiaSDK (3.4.9)
+  - Meiqia/MQChatViewController (3.4.9):
+    - Meiqia/MeiqiaSDK
+  - MJRefresh (3.2.0)
+  - SDCycleScrollView (1.75):
+    - SDWebImage (>= 4.0.0)
+  - SDWebImage (4.4.7):
+    - SDWebImage/Core (= 4.4.7)
+  - SDWebImage/Core (4.4.7)
+  - SocketRocket (0.5.1)
+  - SSZipArchive (2.2.2)
+  - TZImagePickerController (3.2.1)
+  - UMengAnalytics-NO-IDFA (4.2.5)
+  - UMengUShare/Core (6.4.8.2):
+    - UMengUShare/Network
+  - UMengUShare/Network (6.4.8.2)
+  - UMengUShare/Social/QQ (6.4.8.2):
+    - UMengUShare/Core
+    - UMengUShare/Social/ReducedQQ
+  - UMengUShare/Social/ReducedQQ (6.4.8.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/ReducedWeChat (6.4.8.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/WeChat (6.4.8.2):
+    - UMengUShare/Core
+    - UMengUShare/Social/ReducedWeChat
+  - VerifyCode (3.1.1)
+  - XXShield (2.2.0)
+  - YYCache (1.0.4)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+  - YYWebImage (1.0.5):
+    - YYCache
+    - YYImage
+
+DEPENDENCIES:
+  - AFNetworking
+  - AliPay
+  - Bugly
+  - FLAnimatedImage
+  - FSCalendar
+  - IQKeyboardManager
+  - JPush (~> 3.2.1)
+  - Masonry
+  - Meiqia (~> 3.4.9)
+  - MJRefresh
+  - SDCycleScrollView (~> 1.75)
+  - SDWebImage (~> 4.4.3)
+  - SocketRocket
+  - SSZipArchive
+  - TZImagePickerController
+  - UMengAnalytics-NO-IDFA
+  - UMengUShare/Social/QQ
+  - UMengUShare/Social/WeChat
+  - VerifyCode
+  - XXShield
+  - YYWebImage
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - AliPay
+    - Bugly
+    - FLAnimatedImage
+    - FSCalendar
+    - IQKeyboardManager
+    - JCore
+    - JPush
+    - Masonry
+    - Meiqia
+    - MJRefresh
+    - SDCycleScrollView
+    - SDWebImage
+    - SocketRocket
+    - SSZipArchive
+    - TZImagePickerController
+    - UMengAnalytics-NO-IDFA
+    - UMengUShare
+    - VerifyCode
+    - XXShield
+    - YYCache
+    - YYImage
+    - YYWebImage
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  AliPay: 2bd35a4e486d2a8c035043023cd846e886bb21d1
+  Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  FSCalendar: 3a5ed3636e2ba1b83ebebfcf0c2603105a6f5efe
+  IQKeyboardManager: fcef267266379c003181fc3592f6bdb8bf4db839
+  JCore: 4072327557f0b83cc22dd4041f2f839740c0077b
+  JPush: a1ff8b8ec53fa3419b414946e4db4efa313baeae
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  Meiqia: 75776701963217d7bde57a56e65da7b5e1718b3f
+  MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
+  SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
+  SDWebImage: c10d14a8883ebd89664f02a422006f66a85c0c5d
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
+  SSZipArchive: fa16b8cc4cdeceb698e5e5d9f67e9558532fbf23
+  TZImagePickerController: bf4c57b98d8707fce41ea6be872414a71c7a8c9d
+  UMengAnalytics-NO-IDFA: 16666e32edce5be44ae5b14aaaa7f3582e09d6ab
+  UMengUShare: 370d180101e13ee0227ae657ab119ba97243d2b3
+  VerifyCode: 8967987c688bdbdefa0587a3b15dc6a0f8724ad2
+  XXShield: 1627b07bbc34be33040b2fed774cc4bae37c36eb
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+  YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
+
+PODFILE CHECKSUM: c1bfa2ffd5d6639d8c1875844c087800fce3465d
+
+COCOAPODS: 1.7.5
