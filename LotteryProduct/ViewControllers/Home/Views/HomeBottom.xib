@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomeBottom">
+            <rect key="frame" x="0.0" y="0.0" width="352" height="115"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="352" height="115"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XH5-fT-qk2">
+                        <rect key="frame" x="0.0" y="97" width="114.5" height="22"/>
+                        <state key="normal" image="联系客服"/>
+                        <connections>
+                            <action selector="clickKeFu" destination="gTV-IL-0wX" eventType="touchUpInside" id="hkM-Q5-q2S"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7wx-bW-fab">
+                        <rect key="frame" x="118.5" y="97" width="115" height="22"/>
+                        <state key="normal" image="聊天室"/>
+                        <connections>
+                            <action selector="clickChatF" destination="gTV-IL-0wX" eventType="touchUpInside" id="baK-TV-PAF"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRN-Vf-ynq">
+                        <rect key="frame" x="237.5" y="97" width="114.5" height="22"/>
+                        <state key="normal" image="网页版"/>
+                        <connections>
+                            <action selector="clicWebVersion" destination="gTV-IL-0wX" eventType="touchUpInside" id="20l-qF-so7"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qyl-MT-G8t">
+                        <rect key="frame" x="0.0" y="-20" width="352" height="30"/>
+                        <color key="backgroundColor" red="0.92288869620000002" green="0.40300077200000001" blue="0.18814662099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="GRO-uy-VkJ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="7wx-bW-fab" firstAttribute="leading" secondItem="XH5-fT-qk2" secondAttribute="trailing" constant="4" id="EKm-8p-ZNx"/>
+                <constraint firstAttribute="bottom" secondItem="7wx-bW-fab" secondAttribute="bottom" constant="-4" id="HjJ-a4-Vxy"/>
+                <constraint firstItem="7wx-bW-fab" firstAttribute="width" secondItem="XH5-fT-qk2" secondAttribute="width" id="Jbp-hg-t90"/>
+                <constraint firstItem="XH5-fT-qk2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="MUN-L4-zyR"/>
+                <constraint firstItem="YRN-Vf-ynq" firstAttribute="height" secondItem="XH5-fT-qk2" secondAttribute="height" id="QcQ-7O-7gM"/>
+                <constraint firstItem="Qyl-MT-G8t" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="-20" id="SeC-Kt-gk2"/>
+                <constraint firstAttribute="bottom" secondItem="XH5-fT-qk2" secondAttribute="bottom" constant="-4" id="Z7U-Nx-Y8m"/>
+                <constraint firstItem="YRN-Vf-ynq" firstAttribute="leading" secondItem="7wx-bW-fab" secondAttribute="trailing" constant="4" id="gDE-s1-Rao"/>
+                <constraint firstItem="YRN-Vf-ynq" firstAttribute="width" secondItem="XH5-fT-qk2" secondAttribute="width" id="jal-fn-nbu"/>
+                <constraint firstItem="7wx-bW-fab" firstAttribute="height" secondItem="XH5-fT-qk2" secondAttribute="height" id="otl-CI-PSO"/>
+                <constraint firstAttribute="trailing" secondItem="Qyl-MT-G8t" secondAttribute="trailing" id="ozl-4W-Vzf"/>
+                <constraint firstAttribute="bottom" secondItem="YRN-Vf-ynq" secondAttribute="bottom" constant="-4" id="rRV-J0-UHf"/>
+                <constraint firstItem="Qyl-MT-G8t" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="tI9-yd-57z"/>
+                <constraint firstAttribute="trailing" secondItem="YRN-Vf-ynq" secondAttribute="trailing" id="uSZ-D2-db1"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="352" height="115"/>
+            <connections>
+                <outlet property="footView" destination="Qyl-MT-G8t" id="hMq-qv-2yd"/>
+                <outlet property="ltsBtn" destination="7wx-bW-fab" id="IOH-jC-7yr"/>
+                <outlet property="lxkfBtn" destination="XH5-fT-qk2" id="cC1-hR-nmS"/>
+                <outlet property="versionBtn" destination="YRN-Vf-ynq" id="Ron-fN-hkZ"/>
+            </connections>
+            <point key="canvasLocation" x="-1089.5999999999999" y="-91.304347826086968"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="网页版" width="122.5" height="60"/>
+        <image name="聊天室" width="122.5" height="60"/>
+        <image name="联系客服" width="122.5" height="60"/>
+    </resources>
+</document>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AoZhouActBuyLotteryVeiw">
+            <rect key="frame" x="0.0" y="0.0" width="439" height="240"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPN-75-aBM" customClass="AoZhouACTButton">
+                    <rect key="frame" x="15" y="10" width="133" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="2Gy-XD-3GF"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="clickBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="aIG-lB-xiz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PbL-Qy-TJB" customClass="AoZhouACTButton">
+                    <rect key="frame" x="153" y="10" width="133" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="clickBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="8Zu-ge-UL8"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ru1-XR-k6c" customClass="AoZhouACTButton">
+                    <rect key="frame" x="291" y="10" width="133" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="clickBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="aFq-tn-Uaj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOo-zA-hq7" customClass="AoZhouACTButton">
+                    <rect key="frame" x="15" y="65" width="202" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="clickBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="nd3-iH-uDH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76Q-Bj-dyu" customClass="AoZhouACTButton">
+                    <rect key="frame" x="222" y="65" width="202" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="clickBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="JbR-ym-j5t"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgP-Im-iDi" customClass="AoZhouACTButton">
+                    <rect key="frame" x="15" y="120" width="98.5" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="clickBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="lLz-Fc-yym"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fck-V7-ph8" customClass="AoZhouACTButton">
+                    <rect key="frame" x="118.5" y="120" width="98.5" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="clickBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="nMr-fG-JMr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jpr-m9-twd" customClass="AoZhouACTButton">
+                    <rect key="frame" x="222" y="120" width="98.5" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="clickBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="Gnq-z6-ToE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEu-g2-XUC" customClass="AoZhouACTButton">
+                    <rect key="frame" x="325.5" y="120" width="98.5" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="clickBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="OEZ-Yg-L4t"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6m-e2-xbZ" customClass="AoZhouACTButton">
+                    <rect key="frame" x="15" y="175" width="78" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="clickBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="PLO-aU-RDL"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrH-my-qRT" customClass="AoZhouACTButton">
+                    <rect key="frame" x="98" y="175" width="77.5" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="clickBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="gPp-d9-L7Z"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffc-Td-NIv" customClass="AoZhouACTButton">
+                    <rect key="frame" x="180.5" y="175" width="78" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="clickBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="Iik-2c-fGR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2d-M1-m9z" customClass="AoZhouACTButton">
+                    <rect key="frame" x="263.5" y="175" width="77.5" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="clickBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="oE0-zb-RbJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jkp-Pf-y4j" customClass="AoZhouACTButton">
+                    <rect key="frame" x="346" y="175" width="78" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="clickBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="hbf-f0-X48"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ru1-XR-k6c" firstAttribute="centerY" secondItem="PbL-Qy-TJB" secondAttribute="centerY" id="3Ch-S4-xPa"/>
+                <constraint firstItem="hOo-zA-hq7" firstAttribute="top" secondItem="BPN-75-aBM" secondAttribute="bottom" constant="5" id="3Tm-d9-z5w"/>
+                <constraint firstItem="Jkp-Pf-y4j" firstAttribute="width" secondItem="P6m-e2-xbZ" secondAttribute="width" id="44U-LR-lzE"/>
+                <constraint firstItem="PbL-Qy-TJB" firstAttribute="width" secondItem="BPN-75-aBM" secondAttribute="width" id="5h5-Tv-1Hp"/>
+                <constraint firstItem="Jkp-Pf-y4j" firstAttribute="centerY" secondItem="P6m-e2-xbZ" secondAttribute="centerY" id="68D-e8-SEu"/>
+                <constraint firstItem="PbL-Qy-TJB" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="6bO-1W-Rga"/>
+                <constraint firstItem="76Q-Bj-dyu" firstAttribute="leading" secondItem="hOo-zA-hq7" secondAttribute="trailing" constant="5" id="7pE-jC-joy"/>
+                <constraint firstItem="xrH-my-qRT" firstAttribute="width" secondItem="P6m-e2-xbZ" secondAttribute="width" id="8uh-rk-48u"/>
+                <constraint firstItem="ru1-XR-k6c" firstAttribute="width" secondItem="BPN-75-aBM" secondAttribute="width" id="9ev-A2-mlh"/>
+                <constraint firstItem="xrH-my-qRT" firstAttribute="leading" secondItem="P6m-e2-xbZ" secondAttribute="trailing" constant="5" id="9kM-5i-IAT"/>
+                <constraint firstItem="qEu-g2-XUC" firstAttribute="width" secondItem="cgP-Im-iDi" secondAttribute="width" id="AB2-pB-6V7"/>
+                <constraint firstItem="Ffc-Td-NIv" firstAttribute="centerY" secondItem="P6m-e2-xbZ" secondAttribute="centerY" id="ABj-Ep-dO1"/>
+                <constraint firstItem="qEu-g2-XUC" firstAttribute="centerY" secondItem="cgP-Im-iDi" secondAttribute="centerY" id="AxL-t2-8vV"/>
+                <constraint firstItem="PbL-Qy-TJB" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="C85-Fq-keK"/>
+                <constraint firstItem="fck-V7-ph8" firstAttribute="centerY" secondItem="cgP-Im-iDi" secondAttribute="centerY" id="DKM-cx-2Fl"/>
+                <constraint firstItem="qEu-g2-XUC" firstAttribute="height" secondItem="BPN-75-aBM" secondAttribute="height" id="DSB-JB-t7t"/>
+                <constraint firstItem="xrH-my-qRT" firstAttribute="height" secondItem="BPN-75-aBM" secondAttribute="height" id="DTk-rZ-RnH"/>
+                <constraint firstItem="fck-V7-ph8" firstAttribute="leading" secondItem="cgP-Im-iDi" secondAttribute="trailing" constant="5" id="GXh-kt-aAx"/>
+                <constraint firstItem="s2d-M1-m9z" firstAttribute="centerY" secondItem="P6m-e2-xbZ" secondAttribute="centerY" id="Gl0-0c-52E"/>
+                <constraint firstItem="P6m-e2-xbZ" firstAttribute="height" secondItem="BPN-75-aBM" secondAttribute="height" id="JHy-oX-uz9"/>
+                <constraint firstItem="Jpr-m9-twd" firstAttribute="height" secondItem="BPN-75-aBM" secondAttribute="height" id="LFC-rs-Mbc"/>
+                <constraint firstItem="fck-V7-ph8" firstAttribute="height" secondItem="BPN-75-aBM" secondAttribute="height" id="Leo-qV-Vsd"/>
+                <constraint firstItem="hOo-zA-hq7" firstAttribute="height" secondItem="BPN-75-aBM" secondAttribute="height" id="MC7-ns-9lM"/>
+                <constraint firstItem="qEu-g2-XUC" firstAttribute="trailing" secondItem="76Q-Bj-dyu" secondAttribute="trailing" id="S5T-db-rT7"/>
+                <constraint firstItem="BPN-75-aBM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="SSP-Jh-8rZ"/>
+                <constraint firstItem="76Q-Bj-dyu" firstAttribute="trailing" secondItem="ru1-XR-k6c" secondAttribute="trailing" id="Ttb-qv-6uc"/>
+                <constraint firstItem="qEu-g2-XUC" firstAttribute="leading" secondItem="Jpr-m9-twd" secondAttribute="trailing" constant="5" id="U9J-Hf-lgR"/>
+                <constraint firstItem="Ffc-Td-NIv" firstAttribute="height" secondItem="BPN-75-aBM" secondAttribute="height" id="VXN-tQ-f5n"/>
+                <constraint firstItem="PbL-Qy-TJB" firstAttribute="height" secondItem="BPN-75-aBM" secondAttribute="height" id="Xel-ky-dhK"/>
+                <constraint firstItem="ru1-XR-k6c" firstAttribute="height" secondItem="BPN-75-aBM" secondAttribute="height" id="Ybn-KM-cWZ"/>
+                <constraint firstItem="ru1-XR-k6c" firstAttribute="leading" secondItem="PbL-Qy-TJB" secondAttribute="trailing" constant="5" id="Yhd-ah-P3Y"/>
+                <constraint firstItem="hOo-zA-hq7" firstAttribute="leading" secondItem="BPN-75-aBM" secondAttribute="leading" id="ZS7-zL-dai"/>
+                <constraint firstItem="xrH-my-qRT" firstAttribute="centerY" secondItem="P6m-e2-xbZ" secondAttribute="centerY" id="Zxp-6f-tR1"/>
+                <constraint firstItem="76Q-Bj-dyu" firstAttribute="height" secondItem="BPN-75-aBM" secondAttribute="height" id="a7p-Am-bC3"/>
+                <constraint firstItem="cgP-Im-iDi" firstAttribute="leading" secondItem="hOo-zA-hq7" secondAttribute="leading" id="aRn-Wt-rAu"/>
+                <constraint firstItem="fck-V7-ph8" firstAttribute="width" secondItem="cgP-Im-iDi" secondAttribute="width" id="alX-FK-qr1"/>
+                <constraint firstItem="Jpr-m9-twd" firstAttribute="centerY" secondItem="cgP-Im-iDi" secondAttribute="centerY" id="b5v-w0-nRH"/>
+                <constraint firstItem="Jkp-Pf-y4j" firstAttribute="height" secondItem="BPN-75-aBM" secondAttribute="height" id="bxZ-d4-XuW"/>
+                <constraint firstItem="BPN-75-aBM" firstAttribute="centerY" secondItem="PbL-Qy-TJB" secondAttribute="centerY" id="dKr-8f-Jph"/>
+                <constraint firstItem="Jkp-Pf-y4j" firstAttribute="trailing" secondItem="qEu-g2-XUC" secondAttribute="trailing" id="dYQ-oT-V4y"/>
+                <constraint firstItem="P6m-e2-xbZ" firstAttribute="leading" secondItem="cgP-Im-iDi" secondAttribute="leading" id="hTu-Wn-Eld"/>
+                <constraint firstItem="s2d-M1-m9z" firstAttribute="height" secondItem="BPN-75-aBM" secondAttribute="height" id="jER-US-m1m"/>
+                <constraint firstItem="76Q-Bj-dyu" firstAttribute="width" secondItem="hOo-zA-hq7" secondAttribute="width" id="jtX-Wx-E4p"/>
+                <constraint firstItem="Ffc-Td-NIv" firstAttribute="leading" secondItem="xrH-my-qRT" secondAttribute="trailing" constant="5" id="kie-mS-MEc"/>
+                <constraint firstItem="Ffc-Td-NIv" firstAttribute="width" secondItem="P6m-e2-xbZ" secondAttribute="width" id="l7u-A0-Epq"/>
+                <constraint firstItem="Jpr-m9-twd" firstAttribute="width" secondItem="cgP-Im-iDi" secondAttribute="width" id="lBl-ve-v9e"/>
+                <constraint firstItem="PbL-Qy-TJB" firstAttribute="leading" secondItem="BPN-75-aBM" secondAttribute="trailing" constant="5" id="nZp-ak-KvO"/>
+                <constraint firstItem="cgP-Im-iDi" firstAttribute="top" secondItem="hOo-zA-hq7" secondAttribute="bottom" constant="5" id="pqU-M5-pSD"/>
+                <constraint firstItem="76Q-Bj-dyu" firstAttribute="centerY" secondItem="hOo-zA-hq7" secondAttribute="centerY" id="ury-BD-FBt"/>
+                <constraint firstItem="cgP-Im-iDi" firstAttribute="height" secondItem="BPN-75-aBM" secondAttribute="height" id="uxD-mu-BRO"/>
+                <constraint firstItem="Jkp-Pf-y4j" firstAttribute="leading" secondItem="s2d-M1-m9z" secondAttribute="trailing" constant="5" id="vpb-x7-vG4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ru1-XR-k6c" secondAttribute="trailing" constant="15" id="wHP-2V-M6f"/>
+                <constraint firstItem="P6m-e2-xbZ" firstAttribute="top" secondItem="cgP-Im-iDi" secondAttribute="bottom" constant="5" id="xvu-PM-xiY"/>
+                <constraint firstItem="s2d-M1-m9z" firstAttribute="leading" secondItem="Ffc-Td-NIv" secondAttribute="trailing" constant="5" id="yKT-hX-5I2"/>
+                <constraint firstItem="Jpr-m9-twd" firstAttribute="leading" secondItem="fck-V7-ph8" secondAttribute="trailing" constant="5" id="yKg-DS-mfq"/>
+                <constraint firstItem="s2d-M1-m9z" firstAttribute="width" secondItem="P6m-e2-xbZ" secondAttribute="width" id="yRj-h2-YQy"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outletCollection property="numberBtns" destination="BPN-75-aBM" id="1Qc-2n-DDc"/>
+                <outletCollection property="numberBtns" destination="PbL-Qy-TJB" id="58O-PW-0PX"/>
+                <outletCollection property="numberBtns" destination="ru1-XR-k6c" id="oVa-2f-ovc"/>
+                <outletCollection property="numberBtns" destination="hOo-zA-hq7" id="Sdm-J3-vwy"/>
+                <outletCollection property="numberBtns" destination="76Q-Bj-dyu" id="vC1-E0-0ce"/>
+                <outletCollection property="numberBtns" destination="cgP-Im-iDi" id="Kor-Cr-cay"/>
+                <outletCollection property="numberBtns" destination="fck-V7-ph8" id="0QI-Uf-bqI"/>
+                <outletCollection property="numberBtns" destination="Jpr-m9-twd" id="SAr-8b-NLZ"/>
+                <outletCollection property="numberBtns" destination="qEu-g2-XUC" id="tlG-Aw-OFC"/>
+                <outletCollection property="numberBtns" destination="P6m-e2-xbZ" id="Urr-g1-Me2"/>
+                <outletCollection property="numberBtns" destination="xrH-my-qRT" id="SPj-zD-bfn"/>
+                <outletCollection property="numberBtns" destination="Ffc-Td-NIv" id="j3c-i0-HRw"/>
+                <outletCollection property="numberBtns" destination="s2d-M1-m9z" id="1GO-Iq-Tso"/>
+                <outletCollection property="numberBtns" destination="Jkp-Pf-y4j" id="Vhz-8Y-hLD"/>
+            </connections>
+            <point key="canvasLocation" x="-5.5999999999999996" y="-11.694152923538232"/>
+        </view>
+    </objects>
+</document>

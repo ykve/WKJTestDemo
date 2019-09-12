@@ -1,0 +1,19 @@
+//
+//  AddBanksteptwoCtrl.h
+//  LotteryProduct
+//
+//  Created by vsskyblue on 2018/7/20.
+//  Copyright © 2018年 vsskyblue. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface AddBanksteptwoCtrl : UIViewController
+
+@property (nonatomic, copy) NSString *name;
+
+@property (nonatomic, copy) NSString *cardnum;
+
+@property (nonatomic, copy) NSString *cardname;
+
+@end

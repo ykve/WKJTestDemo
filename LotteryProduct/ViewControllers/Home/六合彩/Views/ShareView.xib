@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="ShareView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eBg-PY-GII">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="165"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分享图片到" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXz-dJ-lvk">
+                            <rect key="frame" x="149.5" y="15" width="76.5" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nbq-76-bfc">
+                            <rect key="frame" x="143" y="77.5" width="89" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="朋友圈" image="dsf_朋友圈">
+                                <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="shareClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="iuz-pl-10f"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTS-wy-Xv8">
+                            <rect key="frame" x="262" y="77.5" width="70" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="QQ" image="dsf_QQ好友">
+                                <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="shareClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="yHE-PK-wr0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TzZ-Hq-EyS">
+                            <rect key="frame" x="43" y="94.5" width="70" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="微信好友" image="dsf_信好友">
+                                <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="shareClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="wNQ-cB-4tH"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="UTS-wy-Xv8" firstAttribute="centerY" secondItem="Nbq-76-bfc" secondAttribute="centerY" id="0zP-Rh-km9"/>
+                        <constraint firstItem="fXz-dJ-lvk" firstAttribute="top" secondItem="eBg-PY-GII" secondAttribute="top" constant="15" id="5mN-BJ-JvM"/>
+                        <constraint firstItem="TzZ-Hq-EyS" firstAttribute="centerY" secondItem="Nbq-76-bfc" secondAttribute="centerY" id="M4n-xd-OtM"/>
+                        <constraint firstItem="UTS-wy-Xv8" firstAttribute="leading" secondItem="Nbq-76-bfc" secondAttribute="trailing" constant="30" id="OKb-82-ECv"/>
+                        <constraint firstItem="fXz-dJ-lvk" firstAttribute="centerX" secondItem="eBg-PY-GII" secondAttribute="centerX" id="nKW-zK-yzb"/>
+                        <constraint firstItem="Nbq-76-bfc" firstAttribute="centerX" secondItem="eBg-PY-GII" secondAttribute="centerX" id="oOj-Qc-pcU"/>
+                        <constraint firstItem="Nbq-76-bfc" firstAttribute="centerY" secondItem="eBg-PY-GII" secondAttribute="centerY" constant="20" id="oze-1B-Tbr"/>
+                        <constraint firstItem="Nbq-76-bfc" firstAttribute="leading" secondItem="TzZ-Hq-EyS" secondAttribute="trailing" constant="30" id="sCQ-4n-RI3"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Td8-I3-arz">
+                    <rect key="frame" x="0.0" y="166" width="375" height="45"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="Bxp-wL-dnC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="取消分享">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="baV-62-WPm"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="eBg-PY-GII" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5jj-i2-LcD"/>
+                <constraint firstItem="Td8-I3-arz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7YT-Ia-bNZ"/>
+                <constraint firstItem="eBg-PY-GII" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="DPh-BR-nuQ"/>
+                <constraint firstItem="Td8-I3-arz" firstAttribute="top" secondItem="eBg-PY-GII" secondAttribute="bottom" constant="1" id="JP0-NN-iIq"/>
+                <constraint firstAttribute="trailing" secondItem="eBg-PY-GII" secondAttribute="trailing" id="PZk-1s-9VP"/>
+                <constraint firstAttribute="bottom" secondItem="Td8-I3-arz" secondAttribute="bottom" id="YrJ-ui-zLH"/>
+                <constraint firstAttribute="trailing" secondItem="Td8-I3-arz" secondAttribute="trailing" id="iCW-ZG-gHE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="friendBtn" destination="Nbq-76-bfc" id="xDa-JH-a2d"/>
+                <outlet property="qqBtn" destination="UTS-wy-Xv8" id="mWP-f5-n1a"/>
+                <outlet property="weichatBtn" destination="TzZ-Hq-EyS" id="5dS-NE-lz9"/>
+            </connections>
+            <point key="canvasLocation" x="-363" y="-93"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dsf_QQ好友" width="50" height="50"/>
+        <image name="dsf_信好友" width="16" height="16"/>
+        <image name="dsf_朋友圈" width="49.5" height="50"/>
+    </resources>
+</document>

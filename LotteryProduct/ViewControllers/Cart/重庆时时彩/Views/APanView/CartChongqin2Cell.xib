@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" indentationWidth="10" rowHeight="212" id="KGk-i7-Jjw" customClass="CartChongqin2Cell">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="212"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="211.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="万位" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGk-VC-UqI">
+                        <rect key="frame" x="14" y="11.5" width="27" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.78823529410000004" green="0.6705882353" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N8r-2M-nvw">
+                        <rect key="frame" x="0.0" y="12" width="2" height="15"/>
+                        <color key="backgroundColor" red="0.78823529410000004" green="0.6705882353" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="f66-5I-A0p"/>
+                            <constraint firstAttribute="width" constant="2" id="j9X-nK-Poj"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="824-Uk-EUx">
+                        <rect key="frame" x="14" y="47.5" width="115.5" height="50.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="824-Uk-EUx" secondAttribute="height" multiplier="89:39" id="DMD-QA-uVH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="大" backgroundImage="cartbigunselect">
+                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </state>
+                        <state key="selected" backgroundImage="cartbigselect">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="numbersClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="qqR-dU-ctg"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52n-Wa-Wi1">
+                        <rect key="frame" x="14" y="118" width="115.5" height="51"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="52n-Wa-Wi1" secondAttribute="height" multiplier="89:39" id="oyX-mg-nA5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="双" backgroundImage="cartbigunselect">
+                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </state>
+                        <state key="selected" backgroundImage="cartbigselect">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="numbersClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="jVh-1N-1aD"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odc-XV-01k">
+                        <rect key="frame" x="141.5" y="47.5" width="116" height="50.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="odc-XV-01k" secondAttribute="height" multiplier="89:39" id="cgV-CZ-Hdd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="小" backgroundImage="cartbigunselect">
+                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </state>
+                        <state key="selected" backgroundImage="cartbigselect">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="numbersClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Nlf-G9-krq"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXG-bJ-uVW">
+                        <rect key="frame" x="269.5" y="47.5" width="115.5" height="50.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="fXG-bJ-uVW" secondAttribute="height" multiplier="89:39" id="Ozb-ep-Aae"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="单" backgroundImage="cartbigunselect">
+                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </state>
+                        <state key="selected" backgroundImage="cartbigselect">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="numbersClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="H1R-bC-jd5"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L1A-sQ-aGc">
+                        <rect key="frame" x="0.0" y="210.5" width="400" height="1"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="00S-jT-Gha"/>
+                        </constraints>
+                    </view>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="赔率" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iP6-qe-91z">
+                        <rect key="frame" x="2" y="100" width="21" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" tag="200" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pen-k0-3sR">
+                        <rect key="frame" x="68.5" y="100" width="6.5" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" tag="203" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56Z-R5-cIv">
+                        <rect key="frame" x="68.5" y="171" width="6.5" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button hidden="YES" opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FB7-M6-YMQ">
+                        <rect key="frame" x="141.5" y="118" width="116" height="51"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="FB7-M6-YMQ" secondAttribute="height" multiplier="89:39" id="ArV-ZY-yAN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="龙" backgroundImage="cartbigunselect">
+                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </state>
+                        <state key="selected" backgroundImage="cartbigselect">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="numbersClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="iZH-I1-dCc"/>
+                        </connections>
+                    </button>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" tag="204" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02X-I0-XJr">
+                        <rect key="frame" x="196.5" y="171" width="6.5" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button hidden="YES" opaque="NO" tag="105" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOY-zy-SqM">
+                        <rect key="frame" x="269.5" y="118" width="115.5" height="51"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="BOY-zy-SqM" secondAttribute="height" multiplier="89:39" id="QMy-YF-DCS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="虎" backgroundImage="cartbigunselect">
+                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </state>
+                        <state key="selected" backgroundImage="cartbigselect">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="numbersClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="XwT-Tc-AcI"/>
+                        </connections>
+                    </button>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" tag="205" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXu-dd-2bk">
+                        <rect key="frame" x="324" y="171" width="6.5" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" tag="201" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVL-kF-gzv">
+                        <rect key="frame" x="196.5" y="100" width="6.5" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" tag="202" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhW-mw-fv1">
+                        <rect key="frame" x="324" y="100" width="6.5" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="824-Uk-EUx" firstAttribute="top" secondItem="VGk-VC-UqI" secondAttribute="bottom" constant="20" id="4Ed-fc-LW6"/>
+                    <constraint firstItem="odc-XV-01k" firstAttribute="width" secondItem="824-Uk-EUx" secondAttribute="width" id="5PB-9a-xOo"/>
+                    <constraint firstItem="BOY-zy-SqM" firstAttribute="centerY" secondItem="52n-Wa-Wi1" secondAttribute="centerY" id="8WD-a7-qQu"/>
+                    <constraint firstItem="iP6-qe-91z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="2" id="Ekt-tK-xwz"/>
+                    <constraint firstItem="fXG-bJ-uVW" firstAttribute="leading" secondItem="odc-XV-01k" secondAttribute="trailing" constant="12" id="Gzw-KF-Vp4"/>
+                    <constraint firstItem="N8r-2M-nvw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="LUb-fl-GF8"/>
+                    <constraint firstItem="pen-k0-3sR" firstAttribute="centerX" secondItem="824-Uk-EUx" secondAttribute="centerX" id="LmU-c8-OLG"/>
+                    <constraint firstItem="FB7-M6-YMQ" firstAttribute="centerY" secondItem="52n-Wa-Wi1" secondAttribute="centerY" id="MDR-Ze-z2T"/>
+                    <constraint firstItem="NXu-dd-2bk" firstAttribute="top" secondItem="BOY-zy-SqM" secondAttribute="bottom" constant="2" id="T0f-Ll-ypN"/>
+                    <constraint firstItem="pVL-kF-gzv" firstAttribute="centerX" secondItem="odc-XV-01k" secondAttribute="centerX" id="TeL-vc-2pw"/>
+                    <constraint firstItem="BOY-zy-SqM" firstAttribute="leading" secondItem="FB7-M6-YMQ" secondAttribute="trailing" constant="12" id="V6f-AZ-yxq"/>
+                    <constraint firstItem="iP6-qe-91z" firstAttribute="top" secondItem="824-Uk-EUx" secondAttribute="bottom" constant="2" id="VO8-zL-dmE"/>
+                    <constraint firstItem="NXu-dd-2bk" firstAttribute="centerX" secondItem="BOY-zy-SqM" secondAttribute="centerX" id="ViQ-wq-W1J"/>
+                    <constraint firstItem="FB7-M6-YMQ" firstAttribute="leading" secondItem="52n-Wa-Wi1" secondAttribute="trailing" constant="12" id="WDA-cn-1Uv"/>
+                    <constraint firstItem="VGk-VC-UqI" firstAttribute="centerY" secondItem="N8r-2M-nvw" secondAttribute="centerY" id="WqN-SA-dP4"/>
+                    <constraint firstItem="BOY-zy-SqM" firstAttribute="width" secondItem="52n-Wa-Wi1" secondAttribute="width" id="XSw-Ax-fT7"/>
+                    <constraint firstItem="pen-k0-3sR" firstAttribute="centerY" secondItem="iP6-qe-91z" secondAttribute="centerY" id="Yk0-Aj-65X"/>
+                    <constraint firstItem="odc-XV-01k" firstAttribute="centerY" secondItem="824-Uk-EUx" secondAttribute="centerY" id="Ytl-3M-PVl"/>
+                    <constraint firstItem="N8r-2M-nvw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="bhU-u5-XD6"/>
+                    <constraint firstItem="VGk-VC-UqI" firstAttribute="leading" secondItem="N8r-2M-nvw" secondAttribute="trailing" constant="12" id="cNh-4B-so7"/>
+                    <constraint firstItem="52n-Wa-Wi1" firstAttribute="leading" secondItem="824-Uk-EUx" secondAttribute="leading" id="cfC-dv-6Ji"/>
+                    <constraint firstItem="lhW-mw-fv1" firstAttribute="centerY" secondItem="iP6-qe-91z" secondAttribute="centerY" id="d1a-fj-KYb"/>
+                    <constraint firstItem="52n-Wa-Wi1" firstAttribute="top" secondItem="824-Uk-EUx" secondAttribute="bottom" constant="20" id="gGv-zX-DdH"/>
+                    <constraint firstItem="L1A-sQ-aGc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="iSF-9B-SiL"/>
+                    <constraint firstItem="56Z-R5-cIv" firstAttribute="centerX" secondItem="52n-Wa-Wi1" secondAttribute="centerX" id="igS-3C-ohW"/>
+                    <constraint firstItem="824-Uk-EUx" firstAttribute="leading" secondItem="VGk-VC-UqI" secondAttribute="leading" id="k80-dy-pra"/>
+                    <constraint firstItem="FB7-M6-YMQ" firstAttribute="width" secondItem="52n-Wa-Wi1" secondAttribute="width" id="kzt-ih-Vj0"/>
+                    <constraint firstItem="02X-I0-XJr" firstAttribute="top" secondItem="FB7-M6-YMQ" secondAttribute="bottom" constant="2" id="nWu-o3-Hky"/>
+                    <constraint firstAttribute="trailing" secondItem="fXG-bJ-uVW" secondAttribute="trailing" constant="15" id="oTI-zx-sud"/>
+                    <constraint firstItem="56Z-R5-cIv" firstAttribute="top" secondItem="52n-Wa-Wi1" secondAttribute="bottom" constant="2" id="pQ0-3b-VMz"/>
+                    <constraint firstItem="pVL-kF-gzv" firstAttribute="centerY" secondItem="iP6-qe-91z" secondAttribute="centerY" id="q9i-b0-X94"/>
+                    <constraint firstItem="odc-XV-01k" firstAttribute="leading" secondItem="824-Uk-EUx" secondAttribute="trailing" constant="12" id="s3k-5V-mXl"/>
+                    <constraint firstAttribute="bottom" secondItem="L1A-sQ-aGc" secondAttribute="bottom" id="sxv-zw-wRk"/>
+                    <constraint firstItem="lhW-mw-fv1" firstAttribute="centerX" secondItem="fXG-bJ-uVW" secondAttribute="centerX" id="u1u-sp-DjF"/>
+                    <constraint firstAttribute="trailing" secondItem="L1A-sQ-aGc" secondAttribute="trailing" id="wNa-jl-qqh"/>
+                    <constraint firstItem="fXG-bJ-uVW" firstAttribute="width" secondItem="824-Uk-EUx" secondAttribute="width" id="xGx-wz-a5G"/>
+                    <constraint firstItem="02X-I0-XJr" firstAttribute="centerX" secondItem="FB7-M6-YMQ" secondAttribute="centerX" id="yJk-1Z-EA9"/>
+                    <constraint firstItem="fXG-bJ-uVW" firstAttribute="centerY" secondItem="824-Uk-EUx" secondAttribute="centerY" id="zQP-rb-xKb"/>
+                    <constraint firstAttribute="trailing" secondItem="BOY-zy-SqM" secondAttribute="trailing" constant="15" id="zSS-gk-Z24"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="misstitlelab" destination="iP6-qe-91z" id="aJt-91-PXB"/>
+                <outlet property="titlelab" destination="VGk-VC-UqI" id="5Yy-6Y-TGa"/>
+                <outletCollection property="numbersBtns" destination="824-Uk-EUx" id="X9G-yS-Hec"/>
+                <outletCollection property="numbersBtns" destination="odc-XV-01k" id="jza-Ma-1g3"/>
+                <outletCollection property="numbersBtns" destination="fXG-bJ-uVW" id="TWe-gv-Llk"/>
+                <outletCollection property="numbersBtns" destination="52n-Wa-Wi1" id="Nol-iS-1XZ"/>
+                <outletCollection property="numbersBtns" destination="FB7-M6-YMQ" id="gPp-89-BZR"/>
+                <outletCollection property="numbersBtns" destination="BOY-zy-SqM" id="36D-0W-Klo"/>
+                <outletCollection property="numberlabs" destination="pen-k0-3sR" id="kLx-Vj-XDy"/>
+                <outletCollection property="numberlabs" destination="pVL-kF-gzv" id="6Z2-Gd-8Dh"/>
+                <outletCollection property="numberlabs" destination="lhW-mw-fv1" id="BuU-Is-bAa"/>
+                <outletCollection property="numberlabs" destination="56Z-R5-cIv" id="H83-zy-zQo"/>
+                <outletCollection property="numberlabs" destination="02X-I0-XJr" id="I29-f8-vK2"/>
+                <outletCollection property="numberlabs" destination="NXu-dd-2bk" id="U3r-Xx-aNP"/>
+            </connections>
+            <point key="canvasLocation" x="-1555" y="121"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cartbigselect" width="89" height="39"/>
+        <image name="cartbigunselect" width="89" height="39"/>
+    </resources>
+</document>

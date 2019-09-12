@@ -1,0 +1,82 @@
+//
+//  PrefixHeader.pch
+//  WorksProduct
+//
+//  Created by vsskyblue on 2018/2/27.
+//  Copyright © 2018年 vsskyblue. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+///Users/yanfazhongxin/Desktop//Project/新地址/cpt-ios/LotteryProduct/Others/PrefixHeader.pch:17:9: 'AFNetworking.h' file not found
+#import "AppDelegate.h"
+#import "MJExtension.h"
+#import "AFNetworking.h"
+#import "SDCycleScrollView.h"
+#import "IQTextView.h"
+#import "Masonry.h"
+#import <SDWebImage/UIButton+WebCache.h>
+#import "UIImageView+WebCache.h"
+#import <TZImagePickerController/TZImagePickerController.h>
+#import "Tools.h"
+#import "UIColor+Hex.h"
+#import "UIButton+GraphicBtn.h"
+#import "UIView+TapAction.h"
+#import "AlertViewTool.h"
+#import "AlertSheetTool.h"
+#import "GetLocation.h"
+#import "UIButton+touch.h"
+#import "UIView+RJ.h"
+#import "UICKeyChainStore.h"
+#import <MJRefresh/MJRefresh.h>
+#import "Person.h"
+#import "BaseData.h"
+#import "WebTools.h"
+//#import "LoginCtrl.h"
+#import "MBProgressHUD+WD.h"
+#import "FTPopOverMenu.h"
+#import "RKNotificationHub.h"
+#import <UMMobClick/MobClick.h>
+#import <UMSocialCore/UMSocialCore.h>
+#import "UIViewController+NOData.h"
+#import "TagView.h"
+#import "Timebtn.h"
+#import "UIView+Extension.h"
+#import "NSDate+YN.h"
+#import "LeftCtrl.h"
+#import "NSString+MD5.h"
+#import "CJScroViewBar.h"
+#import "ShowAlertView.h"
+#import "CollectionBaseCell.h"
+#import "Drawlab.h"
+#import "WB_Stopwatch.h"
+#import "LX.pch"
+#import "HZPhotoBrowser.h"
+#import "JPUSHService.h"
+#import "YYWebImage.h"
+#import "ServerConfig.h"
+#import "CPTThemeConfig.h"
+#import "CPTBuyLeftButtonModel.h"
+#import "CPTBuyDataManager.h"
+#import "CPTBuyRightButtonModel.h"
+#import "CPTSixModel.h"
+#import "UIColor+Hex.h"
+#import "CPTOpenLotteryManager.h"
+
+#ifdef __OBJC__
+#import "UIDevice+TFDevice.h"
+#import "BuyTools.h"
+#import "ShowMessageViewController.h"
+#endif
+
+#import "VVAdaptUI.h"
+#import "Constants.h"
+#import "WKJMacros.h"
+#import "NotificationContants.h"
+#import "ThirdMacros.h"
+
+
+#endif /* PrefixHeader_pch */

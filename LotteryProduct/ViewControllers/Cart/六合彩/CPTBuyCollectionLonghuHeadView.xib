@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ryo-rw-DeI" customClass="CPTBuyCollectionLonghuHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="296" height="114"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0PA-v5-ffD">
+                    <rect key="frame" x="119.5" y="24" width="3" height="15"/>
+                    <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="dht-Zp-gM3"/>
+                        <constraint firstAttribute="width" constant="3" id="y2w-QI-OTN"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9a1-yT-4x6">
+                    <rect key="frame" x="173.5" y="24" width="3" height="15"/>
+                    <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="Cd5-6J-EbF"/>
+                        <constraint firstAttribute="width" constant="3" id="ItK-Q1-QnI"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="特码" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1yq-bf-46x">
+                    <rect key="frame" x="131.5" y="22" width="33" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fv2-Jm-ETf">
+                    <rect key="frame" x="12" y="64" width="138" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="BpH-TZ-RdF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <state key="normal" title="龙" backgroundImage="buy_lhc_long">
+                        <color key="titleColor" red="0.63976055383682251" green="0.64025813341140747" blue="0.63983756303787231" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hon-5m-kiI">
+                    <rect key="frame" x="150" y="64" width="138" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="lbJ-Rh-ULO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <state key="normal" title="虎" backgroundImage="buy_lhc_hu">
+                        <color key="titleColor" red="0.63976055383682251" green="0.64025813341140747" blue="0.63983756303787231" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="1yq-bf-46x" firstAttribute="centerX" secondItem="ryo-rw-DeI" secondAttribute="centerX" id="0ek-3e-s5e"/>
+                <constraint firstAttribute="trailing" secondItem="Hon-5m-kiI" secondAttribute="trailing" constant="8" id="4Y2-pR-3UU"/>
+                <constraint firstItem="Hon-5m-kiI" firstAttribute="leading" secondItem="Fv2-Jm-ETf" secondAttribute="trailing" id="5Kf-Sf-uQq"/>
+                <constraint firstItem="Hon-5m-kiI" firstAttribute="height" secondItem="Fv2-Jm-ETf" secondAttribute="height" id="GXJ-A6-VrV"/>
+                <constraint firstItem="1yq-bf-46x" firstAttribute="leading" secondItem="0PA-v5-ffD" secondAttribute="trailing" constant="9" id="HeJ-sW-Uaa"/>
+                <constraint firstItem="0PA-v5-ffD" firstAttribute="top" secondItem="ryo-rw-DeI" secondAttribute="top" constant="24" id="ICI-2C-G9f"/>
+                <constraint firstItem="Fv2-Jm-ETf" firstAttribute="leading" secondItem="QRn-kX-Jk6" secondAttribute="leading" constant="12" id="Nw9-Xf-wTu"/>
+                <constraint firstItem="9a1-yT-4x6" firstAttribute="top" secondItem="ryo-rw-DeI" secondAttribute="top" constant="24" id="UoG-fg-nzm"/>
+                <constraint firstItem="1yq-bf-46x" firstAttribute="top" secondItem="ryo-rw-DeI" secondAttribute="top" constant="22" id="VAI-wW-1OW"/>
+                <constraint firstItem="Hon-5m-kiI" firstAttribute="width" secondItem="Fv2-Jm-ETf" secondAttribute="width" id="hXi-EC-AmT"/>
+                <constraint firstItem="Hon-5m-kiI" firstAttribute="bottom" secondItem="QRn-kX-Jk6" secondAttribute="bottom" constant="-10" id="qS8-Gh-MLi"/>
+                <constraint firstItem="9a1-yT-4x6" firstAttribute="leading" secondItem="1yq-bf-46x" secondAttribute="trailing" constant="9" id="zBh-6w-xTq"/>
+                <constraint firstItem="Fv2-Jm-ETf" firstAttribute="bottom" secondItem="QRn-kX-Jk6" secondAttribute="bottom" constant="-10" id="zKD-SH-dqj"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="QRn-kX-Jk6"/>
+            <connections>
+                <outlet property="huBtn" destination="Hon-5m-kiI" id="RoQ-Rc-VTk"/>
+                <outlet property="leftView" destination="0PA-v5-ffD" id="FYv-OQ-1sP"/>
+                <outlet property="longBtn" destination="Fv2-Jm-ETf" id="J4X-R7-iUo"/>
+                <outlet property="pointView" destination="0PA-v5-ffD" id="jQY-RG-gki"/>
+                <outlet property="rightView" destination="9a1-yT-4x6" id="OWS-M1-vTe"/>
+                <outlet property="titleLabel" destination="1yq-bf-46x" id="96Z-90-PQ1"/>
+            </connections>
+            <point key="canvasLocation" x="-1572.8" y="-534.33283358320841"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="buy_lhc_hu" width="130" height="40"/>
+        <image name="buy_lhc_long" width="130.5" height="40"/>
+    </resources>
+</document>

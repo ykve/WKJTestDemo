@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CPTBuyStopView">
+            <rect key="frame" x="0.0" y="0.0" width="435" height="330"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q9V-cp-Pas">
+                    <rect key="frame" x="0.0" y="0.0" width="435" height="330"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stop_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="rTE-XG-GHd">
+                            <rect key="frame" x="97" y="101" width="241" height="128"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="128" id="rPh-pm-my7"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="rTE-XG-GHd" firstAttribute="leading" secondItem="Q9V-cp-Pas" secondAttribute="leading" constant="97" id="NXq-7q-VI2"/>
+                        <constraint firstItem="rTE-XG-GHd" firstAttribute="centerY" secondItem="Q9V-cp-Pas" secondAttribute="centerY" id="fOp-MN-Vha"/>
+                        <constraint firstItem="rTE-XG-GHd" firstAttribute="centerX" secondItem="Q9V-cp-Pas" secondAttribute="centerX" id="nkE-ge-WMG"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Q9V-cp-Pas" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9UT-7F-vAY"/>
+                <constraint firstItem="Q9V-cp-Pas" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Naw-5P-MhW"/>
+                <constraint firstAttribute="trailing" secondItem="Q9V-cp-Pas" secondAttribute="trailing" id="R0l-CC-olt"/>
+                <constraint firstAttribute="bottom" secondItem="Q9V-cp-Pas" secondAttribute="bottom" id="WXa-EM-LcD"/>
+                <constraint firstItem="Q9V-cp-Pas" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Z5m-vX-2nS"/>
+                <constraint firstItem="Q9V-cp-Pas" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ff6-v8-qM7"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-474" y="-13"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="stop_bg.png" width="422" height="317"/>
+    </resources>
+</document>

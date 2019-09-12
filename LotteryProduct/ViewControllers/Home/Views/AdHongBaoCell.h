@@ -1,0 +1,14 @@
+//
+//  HomeCell.h
+//  LotteryProduct
+//
+//  Created by vsskyblue on 2018/6/20.
+//  Copyright © 2018年 vsskyblue. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+@interface AdHongBaoCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *nameLa;
+@property (weak, nonatomic) IBOutlet UILabel *moneyLa;
+
+@end

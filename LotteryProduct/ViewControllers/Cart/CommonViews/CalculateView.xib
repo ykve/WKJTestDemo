@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CalculateView">
+            <rect key="frame" x="0.0" y="0.0" width="430" height="52"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="10" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozM-9A-92b">
+                    <rect key="frame" x="5" y="13.5" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="Dga-a1-YTZ"/>
+                        <constraint firstAttribute="width" constant="25" id="EBT-eu-UXM"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                    <state key="normal" image="shanchu"/>
+                    <connections>
+                        <action selector="BuyLotteryButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="UdP-tT-UDH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMa-ls-ICD">
+                    <rect key="frame" x="35" y="10" width="90" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="3cv-wu-luJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <inset key="titleEdgeInsets" minX="-55" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="70" minY="5" maxX="5" maxY="5"/>
+                    <state key="normal" title="100元" image="sanjiaoshang">
+                        <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" image="sanjiaoxia"/>
+                    <connections>
+                        <action selector="BuyLotteryButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="JWW-8I-Izb"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" tag="30" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="倍数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9w-Yz-kkW">
+                    <rect key="frame" x="130" y="18" width="27" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MIv-Am-evC">
+                    <rect key="frame" x="162" y="11" width="167" height="30"/>
+                    <subviews>
+                        <button opaque="NO" tag="40" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJX-Dp-3K2">
+                            <rect key="frame" x="127" y="0.0" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="CDv-Ew-vtU"/>
+                                <constraint firstAttribute="height" constant="30" id="Zwi-j6-YhX"/>
+                            </constraints>
+                            <state key="normal" title="+" image="jia"/>
+                            <connections>
+                                <action selector="BuyLotteryButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="2Oq-QN-Pps"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N6I-CA-RK5">
+                            <rect key="frame" x="68.5" y="6.5" width="30" height="17"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="6NP-HO-R68"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        </textField>
+                        <button opaque="NO" tag="30" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jsD-Mg-Y6e">
+                            <rect key="frame" x="10" y="0.0" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="iLb-2h-NV7"/>
+                                <constraint firstAttribute="width" constant="30" id="pkx-G8-fC7"/>
+                            </constraints>
+                            <state key="normal" image="jian"/>
+                            <connections>
+                                <action selector="BuyLotteryButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="tfT-dF-FH0"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="N6I-CA-RK5" firstAttribute="centerX" secondItem="MIv-Am-evC" secondAttribute="centerX" id="2VB-Uf-Yda"/>
+                        <constraint firstItem="N6I-CA-RK5" firstAttribute="centerY" secondItem="MIv-Am-evC" secondAttribute="centerY" id="6a6-oS-Pfm"/>
+                        <constraint firstItem="jsD-Mg-Y6e" firstAttribute="centerY" secondItem="N6I-CA-RK5" secondAttribute="centerY" id="HrB-M8-JG9"/>
+                        <constraint firstItem="fJX-Dp-3K2" firstAttribute="centerY" secondItem="N6I-CA-RK5" secondAttribute="centerY" id="M3x-oY-nKT"/>
+                        <constraint firstItem="jsD-Mg-Y6e" firstAttribute="leading" secondItem="MIv-Am-evC" secondAttribute="leading" constant="10" id="NOb-UR-Cs9"/>
+                        <constraint firstAttribute="trailing" secondItem="fJX-Dp-3K2" secondAttribute="trailing" constant="10" id="Nhq-VB-qer"/>
+                        <constraint firstAttribute="height" constant="30" id="OS6-Ha-Aho"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" tag="50" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZB-zJ-2VR">
+                    <rect key="frame" x="334" y="10" width="32" height="32"/>
+                    <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                    <state key="normal" image="suiji"/>
+                    <connections>
+                        <action selector="BuyLotteryButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="EH0-2f-VV5"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="60" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5Y-vF-ZIy">
+                    <rect key="frame" x="371" y="12" width="54" height="28"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="加入购彩">
+                        <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="BuyLotteryButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Iyp-oX-d6G"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="W5Y-vF-ZIy" firstAttribute="centerY" secondItem="sZB-zJ-2VR" secondAttribute="centerY" id="9tH-0S-YfO"/>
+                <constraint firstItem="W5Y-vF-ZIy" firstAttribute="leading" secondItem="sZB-zJ-2VR" secondAttribute="trailing" constant="5" id="Av0-BL-bTS"/>
+                <constraint firstItem="sZB-zJ-2VR" firstAttribute="centerY" secondItem="f9w-Yz-kkW" secondAttribute="centerY" id="BCH-7r-tzp"/>
+                <constraint firstItem="f9w-Yz-kkW" firstAttribute="centerY" secondItem="ZMa-ls-ICD" secondAttribute="centerY" id="Hqi-pq-9NV"/>
+                <constraint firstItem="sZB-zJ-2VR" firstAttribute="leading" secondItem="MIv-Am-evC" secondAttribute="trailing" constant="5" id="ISu-99-eR1"/>
+                <constraint firstItem="ozM-9A-92b" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="L2u-t4-Lf2"/>
+                <constraint firstItem="ZMa-ls-ICD" firstAttribute="leading" secondItem="ozM-9A-92b" secondAttribute="trailing" constant="5" id="Li3-ev-rjU"/>
+                <constraint firstItem="MIv-Am-evC" firstAttribute="leading" secondItem="f9w-Yz-kkW" secondAttribute="trailing" constant="5" id="NaW-Cl-BIw"/>
+                <constraint firstItem="MIv-Am-evC" firstAttribute="centerY" secondItem="f9w-Yz-kkW" secondAttribute="centerY" id="OOD-Gq-Pbj"/>
+                <constraint firstItem="f9w-Yz-kkW" firstAttribute="leading" secondItem="ZMa-ls-ICD" secondAttribute="trailing" constant="5" id="P1i-Wu-YNO"/>
+                <constraint firstItem="ZMa-ls-ICD" firstAttribute="centerY" secondItem="ozM-9A-92b" secondAttribute="centerY" id="iFg-wD-QoY"/>
+                <constraint firstAttribute="trailing" secondItem="W5Y-vF-ZIy" secondAttribute="trailing" constant="5" id="oco-Bz-SvE"/>
+                <constraint firstItem="ozM-9A-92b" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="qpB-Md-eAy"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="multiTextField" destination="N6I-CA-RK5" id="pQe-CP-IXc"/>
+                <outlet property="plusMinView" destination="MIv-Am-evC" id="HUv-am-MJ2"/>
+                <outlet property="totalMonryBtn" destination="ZMa-ls-ICD" id="KQS-37-W0d"/>
+            </connections>
+            <point key="canvasLocation" x="174.40000000000001" y="219.49025487256372"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="jia" width="32" height="32"/>
+        <image name="jian" width="32" height="32"/>
+        <image name="sanjiaoshang" width="32" height="32"/>
+        <image name="sanjiaoxia" width="32" height="32"/>
+        <image name="shanchu" width="32" height="32"/>
+        <image name="suiji" width="32" height="32"/>
+    </resources>
+</document>

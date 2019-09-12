@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="FavoriteHeader">
+            <rect key="frame" x="0.0" y="0.0" width="453" height="249"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lb7-eB-fPi">
+                    <rect key="frame" x="0.0" y="60" width="453" height="189"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="我的收藏" translatesAutoresizingMaskIntoConstraints="NO" id="y2Z-W9-XtB">
+                            <rect key="frame" x="12" y="0.0" width="40" height="189"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="kpn-qv-NQj"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的收藏" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qmg-3u-6gM">
+                            <rect key="frame" x="52" y="85" width="65.5" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2dL-Wo-zmj">
+                            <rect key="frame" x="373" y="84.5" width="60" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="1Oy-Rz-AIh"/>
+                                <constraint firstAttribute="height" constant="20" id="xcT-BZ-KBE"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                            <state key="normal" title="编辑">
+                                <color key="titleColor" red="0.63976055379999996" green="0.64025813340000004" blue="0.63983756300000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.58358651399612427" green="0.58404386043548584" blue="0.58365732431411743" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="clickEdit:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="Dl7-QW-dY9"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mfw-Ve-CQ2">
+                            <rect key="frame" x="20" y="15" width="353" height="174"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PmI-27-yFN">
+                            <rect key="frame" x="10" y="1" width="443" height="0.5"/>
+                            <color key="backgroundColor" red="0.25959309935569763" green="0.26845875382423401" blue="0.31181466579437256" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="iGk-Yp-sb7"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="2dL-Wo-zmj" secondAttribute="trailing" constant="20" id="0Qs-5v-rqd"/>
+                        <constraint firstAttribute="bottom" secondItem="y2Z-W9-XtB" secondAttribute="bottom" id="4mt-eQ-Z9I"/>
+                        <constraint firstItem="Mfw-Ve-CQ2" firstAttribute="leading" secondItem="Lb7-eB-fPi" secondAttribute="leading" constant="20" id="6jK-6V-3gC"/>
+                        <constraint firstItem="Qmg-3u-6gM" firstAttribute="leading" secondItem="y2Z-W9-XtB" secondAttribute="trailing" id="72s-ZE-ZV9"/>
+                        <constraint firstItem="Qmg-3u-6gM" firstAttribute="centerY" secondItem="Lb7-eB-fPi" secondAttribute="centerY" id="AxJ-sW-JDS"/>
+                        <constraint firstAttribute="trailing" secondItem="PmI-27-yFN" secondAttribute="trailing" id="BQI-8F-gRG"/>
+                        <constraint firstItem="2dL-Wo-zmj" firstAttribute="leading" secondItem="Mfw-Ve-CQ2" secondAttribute="trailing" id="PeI-QX-j6T"/>
+                        <constraint firstItem="PmI-27-yFN" firstAttribute="top" secondItem="Lb7-eB-fPi" secondAttribute="top" constant="1" id="S4V-Bn-g32"/>
+                        <constraint firstItem="2dL-Wo-zmj" firstAttribute="centerY" secondItem="Lb7-eB-fPi" secondAttribute="centerY" id="ZE7-h8-TNF"/>
+                        <constraint firstItem="PmI-27-yFN" firstAttribute="leading" secondItem="Lb7-eB-fPi" secondAttribute="leading" constant="10" id="c2s-ln-PtX"/>
+                        <constraint firstItem="Mfw-Ve-CQ2" firstAttribute="top" secondItem="Lb7-eB-fPi" secondAttribute="top" constant="15" id="gGS-Z5-wRH"/>
+                        <constraint firstAttribute="bottom" secondItem="Mfw-Ve-CQ2" secondAttribute="bottom" id="gnS-05-KF9"/>
+                        <constraint firstItem="Qmg-3u-6gM" firstAttribute="centerY" secondItem="y2Z-W9-XtB" secondAttribute="centerY" id="qaK-59-2en"/>
+                        <constraint firstItem="y2Z-W9-XtB" firstAttribute="top" secondItem="Lb7-eB-fPi" secondAttribute="top" id="ssF-fn-sZz"/>
+                        <constraint firstItem="y2Z-W9-XtB" firstAttribute="leading" secondItem="Lb7-eB-fPi" secondAttribute="leading" constant="12" id="tEL-Sa-WGQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="9Gg-ye-v9C" firstAttribute="trailing" secondItem="Lb7-eB-fPi" secondAttribute="trailing" id="732-SM-QYp"/>
+                <constraint firstItem="Lb7-eB-fPi" firstAttribute="leading" secondItem="9Gg-ye-v9C" secondAttribute="leading" id="bya-2P-day"/>
+                <constraint firstItem="Lb7-eB-fPi" firstAttribute="top" secondItem="9Gg-ye-v9C" secondAttribute="top" constant="16" id="dDq-JF-3Zk"/>
+                <constraint firstItem="Lb7-eB-fPi" firstAttribute="leading" secondItem="9Gg-ye-v9C" secondAttribute="leading" id="oeD-G6-g2s"/>
+                <constraint firstAttribute="bottom" secondItem="Lb7-eB-fPi" secondAttribute="bottom" id="p2P-PK-bGn"/>
+                <constraint firstItem="Lb7-eB-fPi" firstAttribute="trailing" secondItem="9Gg-ye-v9C" secondAttribute="trailing" id="xzq-Ee-uCB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="9Gg-ye-v9C"/>
+            <connections>
+                <outlet property="editBtn" destination="2dL-Wo-zmj" id="y4j-3V-lNp"/>
+                <outlet property="leftImageView" destination="y2Z-W9-XtB" id="FD5-pm-rdH"/>
+                <outlet property="line1" destination="PmI-27-yFN" id="OEk-On-uAz"/>
+                <outlet property="remindLbl" destination="Qmg-3u-6gM" id="xli-rd-Yob"/>
+                <outlet property="titleL" destination="Mfw-Ve-CQ2" id="6Wa-OS-Dyg"/>
+            </connections>
+            <point key="canvasLocation" x="-1150" y="-222.65625"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="我的收藏" width="16" height="15"/>
+    </resources>
+</document>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Imy-uk-yNl" customClass="CPTBuyCollectionHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="312" height="57"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view hidden="YES" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="9G2-EF-xMC">
+                    <rect key="frame" x="0.0" y="0.0" width="312" height="2"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="rXt-sp-VaR"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w3Q-sF-fv7">
+                    <rect key="frame" x="12" y="20" width="3" height="15"/>
+                    <color key="backgroundColor" red="0.95026057959999999" green="0.41488954420000002" blue="0.18813982609999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="t83-J2-LVD"/>
+                        <constraint firstAttribute="width" constant="3" id="ybh-yB-XYl"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="特码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FtY-K1-Opn">
+                    <rect key="frame" x="21" y="18" width="31" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <segmentedControl hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" translatesAutoresizingMaskIntoConstraints="NO" id="ao8-Y2-czo">
+                    <rect key="frame" x="134" y="15" width="168" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="pvm-BG-PK4"/>
+                        <constraint firstAttribute="width" constant="168" id="u6c-EC-r2K"/>
+                    </constraints>
+                    <segments>
+                        <segment title="全"/>
+                        <segment title="大"/>
+                        <segment title="小"/>
+                        <segment title="单"/>
+                        <segment title="双"/>
+                        <segment title="清"/>
+                    </segments>
+                    <color key="tintColor" red="0.63976055383682251" green="0.64025813341140747" blue="0.63983756303787231" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.63976055383682251" green="0.64025813341140747" blue="0.63983756303787231" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </segmentedControl>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JBL-ac-hG5">
+                    <rect key="frame" x="125.5" y="17" width="3" height="15"/>
+                    <color key="backgroundColor" red="0.95026057959999999" green="0.41488954420000002" blue="0.18813982609999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="3" id="cCh-s6-Swo"/>
+                        <constraint firstAttribute="height" constant="15" id="tgx-Z7-D7X"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b11-9Q-7Nw">
+                    <rect key="frame" x="183.5" y="17" width="3" height="15"/>
+                    <color key="backgroundColor" red="0.95026057959999999" green="0.41488954420000002" blue="0.18813982609999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="3" id="HkD-R8-uUX"/>
+                        <constraint firstAttribute="height" constant="15" id="bOL-Zd-udp"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="千位" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hbs-GC-uDI">
+                    <rect key="frame" x="138.5" y="13" width="35" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="23" id="Ydf-eZ-cAe"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="hbf-wD-K5Z"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="23" id="wyM-wZ-xHP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="FtY-K1-Opn" firstAttribute="top" secondItem="Imy-uk-yNl" secondAttribute="top" constant="18" id="1ay-vL-qur"/>
+                <constraint firstItem="w3Q-sF-fv7" firstAttribute="top" secondItem="Imy-uk-yNl" secondAttribute="top" constant="20" id="2g8-Vo-VLm"/>
+                <constraint firstItem="Hbs-GC-uDI" firstAttribute="leading" secondItem="JBL-ac-hG5" secondAttribute="trailing" constant="10" id="3KK-5X-Ich"/>
+                <constraint firstItem="b11-9Q-7Nw" firstAttribute="top" secondItem="Imy-uk-yNl" secondAttribute="top" constant="17" id="BL9-pw-Mtk"/>
+                <constraint firstItem="w3Q-sF-fv7" firstAttribute="leading" secondItem="Imy-uk-yNl" secondAttribute="leading" constant="12" id="DJ4-be-vYv"/>
+                <constraint firstItem="b11-9Q-7Nw" firstAttribute="leading" secondItem="Hbs-GC-uDI" secondAttribute="trailing" constant="10" id="HMR-YD-CwI"/>
+                <constraint firstAttribute="trailing" secondItem="ao8-Y2-czo" secondAttribute="trailing" constant="10" id="Igv-YU-uWa"/>
+                <constraint firstItem="JBL-ac-hG5" firstAttribute="top" secondItem="Imy-uk-yNl" secondAttribute="top" constant="17" id="NqD-nU-R1l"/>
+                <constraint firstItem="9G2-EF-xMC" firstAttribute="top" secondItem="Imy-uk-yNl" secondAttribute="top" id="PKX-HG-F25"/>
+                <constraint firstItem="FtY-K1-Opn" firstAttribute="leading" secondItem="w3Q-sF-fv7" secondAttribute="trailing" constant="6" id="RVh-8C-fqc"/>
+                <constraint firstItem="Hbs-GC-uDI" firstAttribute="centerX" secondItem="Imy-uk-yNl" secondAttribute="centerX" id="S0H-78-HDl"/>
+                <constraint firstAttribute="trailing" secondItem="9G2-EF-xMC" secondAttribute="trailing" id="fPg-Pg-bZM"/>
+                <constraint firstItem="9G2-EF-xMC" firstAttribute="leading" secondItem="Imy-uk-yNl" secondAttribute="leading" id="fr7-8Z-NKD"/>
+                <constraint firstItem="Hbs-GC-uDI" firstAttribute="top" secondItem="Imy-uk-yNl" secondAttribute="top" constant="13" id="s0s-jw-OLO"/>
+                <constraint firstItem="ao8-Y2-czo" firstAttribute="top" secondItem="Imy-uk-yNl" secondAttribute="top" constant="15" id="t5m-uI-9QW"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lineView" destination="9G2-EF-xMC" id="oB0-ob-Rme"/>
+                <outlet property="pointView" destination="w3Q-sF-fv7" id="y9p-n5-Upj"/>
+                <outlet property="pointView2" destination="JBL-ac-hG5" id="Dmg-s2-hl3"/>
+                <outlet property="pointView3" destination="b11-9Q-7Nw" id="p2v-dW-dhR"/>
+                <outlet property="segment" destination="ao8-Y2-czo" id="BS9-ZB-a4K"/>
+                <outlet property="titleLabel" destination="FtY-K1-Opn" id="IWL-RH-gB5"/>
+                <outlet property="titleLabel2" destination="Hbs-GC-uDI" id="yke-FM-jEC"/>
+            </connections>
+            <point key="canvasLocation" x="-1216" y="-150.67466266866569"/>
+        </view>
+    </objects>
+</document>

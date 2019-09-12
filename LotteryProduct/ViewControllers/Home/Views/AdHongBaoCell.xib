@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="88" id="DZa-ft-BbA" customClass="AdHongBaoCell">
+            <rect key="frame" x="0.0" y="0.0" width="461" height="91"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DZa-ft-BbA" id="NW6-n8-Spe">
+                <rect key="frame" x="0.0" y="0.0" width="461" height="90.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="恭喜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFg-aq-9hs">
+                        <rect key="frame" x="26" y="63" width="29" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="王二铎" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dyc-FD-Gte">
+                        <rect key="frame" x="58" y="63" width="43" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <color key="textColor" red="0.36824387311935425" green="0.67964392900466919" blue="0.99999004602432251" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="领取红包" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNE-dJ-JaA">
+                        <rect key="frame" x="104" y="63" width="57.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XHN-Ro-tPr">
+                        <rect key="frame" x="164.5" y="63" width="9" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.98936992883682251" green="0.30150133371353149" blue="0.33267772197723389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZG-fT-exq">
+                        <rect key="frame" x="176.5" y="63" width="14.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="DNE-dJ-JaA" firstAttribute="leading" secondItem="dyc-FD-Gte" secondAttribute="trailing" constant="3" id="93r-bk-4D7"/>
+                    <constraint firstItem="dyc-FD-Gte" firstAttribute="height" secondItem="XFg-aq-9hs" secondAttribute="height" id="A0W-KU-Bec"/>
+                    <constraint firstItem="DNE-dJ-JaA" firstAttribute="height" secondItem="XFg-aq-9hs" secondAttribute="height" id="Cfc-yB-tKU"/>
+                    <constraint firstItem="XFg-aq-9hs" firstAttribute="leading" secondItem="NW6-n8-Spe" secondAttribute="leadingMargin" constant="6" id="M0S-gt-hvS"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="gZG-fT-exq" secondAttribute="bottom" id="PKy-AV-6xe"/>
+                    <constraint firstItem="gZG-fT-exq" firstAttribute="leading" secondItem="XHN-Ro-tPr" secondAttribute="trailing" constant="3" id="TrQ-tE-vbj"/>
+                    <constraint firstItem="XHN-Ro-tPr" firstAttribute="leading" secondItem="DNE-dJ-JaA" secondAttribute="trailing" constant="3" id="WRl-q6-SgB"/>
+                    <constraint firstItem="dyc-FD-Gte" firstAttribute="leading" secondItem="XFg-aq-9hs" secondAttribute="trailing" constant="3" id="eJo-v4-Lz9"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="DNE-dJ-JaA" secondAttribute="bottom" id="exe-1D-qvO"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="XFg-aq-9hs" secondAttribute="bottom" id="feD-af-3Ml"/>
+                    <constraint firstItem="gZG-fT-exq" firstAttribute="height" secondItem="XFg-aq-9hs" secondAttribute="height" id="mT1-Yd-Rhv"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="XHN-Ro-tPr" secondAttribute="bottom" id="naa-C4-S1J"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="dyc-FD-Gte" secondAttribute="bottom" id="osH-Oo-xUE"/>
+                    <constraint firstItem="XHN-Ro-tPr" firstAttribute="height" secondItem="XFg-aq-9hs" secondAttribute="height" id="uIa-UA-m9h"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="moneyLa" destination="XHN-Ro-tPr" id="rtK-c9-Ic0"/>
+                <outlet property="nameLa" destination="dyc-FD-Gte" id="TbK-1o-WP1"/>
+            </connections>
+            <point key="canvasLocation" x="-2202.4000000000001" y="-573.46326836581716"/>
+        </tableViewCell>
+    </objects>
+</document>

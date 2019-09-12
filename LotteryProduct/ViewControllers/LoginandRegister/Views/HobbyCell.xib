@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gTV-IL-0wX" customClass="HobbyCell">
+            <rect key="frame" x="0.0" y="0.0" width="259" height="83"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="259" height="83"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePb-fp-brU">
+                        <rect key="frame" x="0.0" y="8" width="251" height="75"/>
+                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="勾选" translatesAutoresizingMaskIntoConstraints="NO" id="4PH-ak-UmQ">
+                        <rect key="frame" x="246" y="0.0" width="13" height="13"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ePb-fp-brU" secondAttribute="trailing" constant="8" id="SAI-E2-4eR"/>
+                <constraint firstItem="4PH-ak-UmQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="TW0-Ws-hxd"/>
+                <constraint firstItem="ePb-fp-brU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="azw-Ip-Vam"/>
+                <constraint firstItem="ePb-fp-brU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="dyA-Ud-9mz"/>
+                <constraint firstAttribute="bottom" secondItem="ePb-fp-brU" secondAttribute="bottom" id="mBG-5U-XZC"/>
+                <constraint firstAttribute="trailing" secondItem="4PH-ak-UmQ" secondAttribute="trailing" id="wO3-cr-pd3"/>
+            </constraints>
+            <size key="customSize" width="259" height="83"/>
+            <connections>
+                <outlet property="selectimgv" destination="4PH-ak-UmQ" id="kgc-N3-JZ9"/>
+                <outlet property="titlelab" destination="ePb-fp-brU" id="zUg-rb-hvx"/>
+            </connections>
+            <point key="canvasLocation" x="-327" y="-134"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="勾选" width="13" height="13"/>
+    </resources>
+</document>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BettingHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="95"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9dQ-4R-xoW">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4OR-dL-lMi">
+                            <rect key="frame" x="10" y="21.5" width="51" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="前一天" image="前一天">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="beforClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="hHM-VH-3Ac"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEt-rK-Rif">
+                            <rect key="frame" x="314" y="21.5" width="51" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="后一天" image="后一天">
+                                <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="afterClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Yst-JZ-ddB"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EwF-fU-7jQ">
+                            <rect key="frame" x="112.5" y="15.5" width="150" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="2Vw-jv-kCa"/>
+                                <constraint firstAttribute="width" constant="150" id="x1K-uH-OAR"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="dateClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="ZMj-W2-MI7"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择日期" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DcX-Ll-l5N">
+                            <rect key="frame" x="120.5" y="22" width="57.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar_3" translatesAutoresizingMaskIntoConstraints="NO" id="7md-nF-83p">
+                            <rect key="frame" x="237.5" y="22" width="17" height="17"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="7md-nF-83p" firstAttribute="trailing" secondItem="EwF-fU-7jQ" secondAttribute="trailing" constant="-8" id="2SO-bS-5Mh"/>
+                        <constraint firstAttribute="trailing" secondItem="aEt-rK-Rif" secondAttribute="trailing" constant="10" id="7a3-1d-YQS"/>
+                        <constraint firstItem="EwF-fU-7jQ" firstAttribute="centerX" secondItem="9dQ-4R-xoW" secondAttribute="centerX" id="8Uz-JS-yQs"/>
+                        <constraint firstItem="7md-nF-83p" firstAttribute="centerY" secondItem="EwF-fU-7jQ" secondAttribute="centerY" id="9Rh-ic-6lf"/>
+                        <constraint firstItem="DcX-Ll-l5N" firstAttribute="leading" secondItem="EwF-fU-7jQ" secondAttribute="leading" constant="8" id="KJu-S3-Irr"/>
+                        <constraint firstItem="4OR-dL-lMi" firstAttribute="leading" secondItem="9dQ-4R-xoW" secondAttribute="leading" constant="10" id="Mzr-Hc-dMj"/>
+                        <constraint firstItem="4OR-dL-lMi" firstAttribute="centerY" secondItem="9dQ-4R-xoW" secondAttribute="centerY" id="Qb7-0G-6RQ"/>
+                        <constraint firstItem="DcX-Ll-l5N" firstAttribute="centerY" secondItem="EwF-fU-7jQ" secondAttribute="centerY" id="VBN-Ne-emO"/>
+                        <constraint firstAttribute="height" constant="60" id="nXD-iu-BAc"/>
+                        <constraint firstItem="aEt-rK-Rif" firstAttribute="centerY" secondItem="9dQ-4R-xoW" secondAttribute="centerY" id="nmA-mX-IzH"/>
+                        <constraint firstItem="EwF-fU-7jQ" firstAttribute="centerY" secondItem="9dQ-4R-xoW" secondAttribute="centerY" id="zjm-jX-oWv"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YMH-2a-zYA">
+                    <rect key="frame" x="1" y="61" width="92.5" height="33"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="全部彩种" image="xialacaidang1">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="lotteryClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="GvM-4v-hE7"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aG-4f-pzG">
+                    <rect key="frame" x="94.5" y="61" width="92.5" height="33"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="投注金额" image="期号不排序">
+                        <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="putmoneyClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="lFz-nf-w2Z"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7z-OJ-pFW">
+                    <rect key="frame" x="188" y="61" width="92.5" height="33"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="中奖金额" image="期号不排序">
+                        <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="addmoneyClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="tKX-h7-nWv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IhC-jK-l76">
+                    <rect key="frame" x="281.5" y="61" width="92.5" height="33"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="时间" image="期号不排序">
+                        <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="timeClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="O4T-Mq-3eE"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="IhC-jK-l76" firstAttribute="leading" secondItem="a7z-OJ-pFW" secondAttribute="trailing" constant="1" id="4qk-yD-MiI"/>
+                <constraint firstItem="9dQ-4R-xoW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9q2-a2-AxK"/>
+                <constraint firstItem="4aG-4f-pzG" firstAttribute="leading" secondItem="YMH-2a-zYA" secondAttribute="trailing" constant="1" id="ArI-GZ-fKn"/>
+                <constraint firstItem="a7z-OJ-pFW" firstAttribute="width" secondItem="YMH-2a-zYA" secondAttribute="width" id="FLz-mJ-LzF"/>
+                <constraint firstItem="YMH-2a-zYA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="1" id="MkZ-3C-uIE"/>
+                <constraint firstItem="a7z-OJ-pFW" firstAttribute="top" secondItem="9dQ-4R-xoW" secondAttribute="bottom" constant="1" id="O1V-SV-S5B"/>
+                <constraint firstAttribute="bottom" secondItem="IhC-jK-l76" secondAttribute="bottom" constant="1" id="OTm-PM-4zp"/>
+                <constraint firstItem="4aG-4f-pzG" firstAttribute="top" secondItem="9dQ-4R-xoW" secondAttribute="bottom" constant="1" id="Pm1-AB-18b"/>
+                <constraint firstAttribute="trailing" secondItem="IhC-jK-l76" secondAttribute="trailing" constant="1" id="RxK-S7-1aM"/>
+                <constraint firstAttribute="bottom" secondItem="YMH-2a-zYA" secondAttribute="bottom" constant="1" id="by1-EJ-j2W"/>
+                <constraint firstItem="a7z-OJ-pFW" firstAttribute="leading" secondItem="4aG-4f-pzG" secondAttribute="trailing" constant="1" id="fRT-0u-MQQ"/>
+                <constraint firstItem="YMH-2a-zYA" firstAttribute="top" secondItem="9dQ-4R-xoW" secondAttribute="bottom" constant="1" id="gC5-AE-nTu"/>
+                <constraint firstItem="9dQ-4R-xoW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jOB-aQ-EIy"/>
+                <constraint firstItem="IhC-jK-l76" firstAttribute="width" secondItem="YMH-2a-zYA" secondAttribute="width" id="krQ-Ni-v5m"/>
+                <constraint firstItem="9dQ-4R-xoW" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="mNF-tp-18o"/>
+                <constraint firstItem="4aG-4f-pzG" firstAttribute="width" secondItem="YMH-2a-zYA" secondAttribute="width" id="n2N-t0-Bud"/>
+                <constraint firstAttribute="bottom" secondItem="a7z-OJ-pFW" secondAttribute="bottom" constant="1" id="qqQ-OP-ywf"/>
+                <constraint firstItem="IhC-jK-l76" firstAttribute="top" secondItem="9dQ-4R-xoW" secondAttribute="bottom" constant="1" id="sVf-WC-AUM"/>
+                <constraint firstAttribute="bottom" secondItem="4aG-4f-pzG" secondAttribute="bottom" constant="1" id="wuo-Tb-IMo"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addmoneyBtn" destination="a7z-OJ-pFW" id="Dja-b1-GeV"/>
+                <outlet property="afterBtn" destination="aEt-rK-Rif" id="xh4-Z2-X3d"/>
+                <outlet property="beforBtn" destination="4OR-dL-lMi" id="bfg-Zc-Gv7"/>
+                <outlet property="dateBtn" destination="EwF-fU-7jQ" id="GwS-9t-qTw"/>
+                <outlet property="datelab" destination="DcX-Ll-l5N" id="DdH-ZL-Wto"/>
+                <outlet property="lotteryBtn" destination="YMH-2a-zYA" id="26J-E6-ZZw"/>
+                <outlet property="putmoneyBtn" destination="4aG-4f-pzG" id="X2u-dy-jOi"/>
+                <outlet property="timeBtn" destination="IhC-jK-l76" id="E34-sK-LOE"/>
+            </connections>
+            <point key="canvasLocation" x="-507" y="-20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="calendar_3" width="17" height="17"/>
+        <image name="xialacaidang1" width="7" height="4"/>
+        <image name="前一天" width="8" height="13"/>
+        <image name="后一天" width="8" height="13"/>
+        <image name="期号不排序" width="6" height="9"/>
+    </resources>
+</document>
